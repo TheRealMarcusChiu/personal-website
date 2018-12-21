@@ -33,10 +33,12 @@
             Full Stack Developer
           </span>
         </h1>
-        <p>I am </p>
         <p>
-            <a class='link pulse' href='mailto:marcuschiu9@gmail.com'>
-                Let's work together &hearts;
+            I am currently working on my Masters in CS at UTD</br>My main focus is in: </br>- Artificial Intelligence</br>- Web Development</br>-  Giving Away My Possessions
+        </p>
+        <p>
+            <a class='link pulse' href='http://marcuschiu.com/resume.html'>
+                resume
             </a>
         </p>
         <p>Some of the things I've worked on:</p>
@@ -47,7 +49,7 @@
                 <img src='assets/images/face-identification.jpg'>
             </figure>
             <a href='https://github.com/TheRealMarcusChiu/machine-learning-face-recognition-identification' target='_blank'>
-                <strong>Facial Identification</strong>
+                <strong class="pulse">Facial Identification</strong>
                 <i>an algorithm utilizing OpenCV</i>
             </a>
         </div>
@@ -56,7 +58,7 @@
                 <img src='assets/images/doc-marcuschiu-com.png'>
             </figure>
             <a href='http://doc.marcuschiu.com' target='_blank'>
-                <strong>Documentation System</strong>
+                <strong class="pulse">Documentation System</strong>
                 <i>a documentation system built for a web browser</i>
             </a>
         </div>
@@ -65,7 +67,7 @@
                 <img src='assets/images/android-developer.png'>
             </figure>
             <a href='https://github.com/groupon-copy' target='_blank'>
-                <strong>Android Application</strong>
+                <strong class="pulse">Android Application</strong>
                 <i>built an android application mimicking the design of Groupon while utilizing Yelp APIs</i>
             </a>
         </div>
@@ -76,7 +78,7 @@
         <p>
         </p>
         <p>
-            <a class='link pulse' href='mailto:marcuschiu9@gmail.com'>Send me an email</a>
+            <a class='email-link pulse' href='mailto:marcuschiu9@gmail.com'>Send me an email</a>
         </p>
         <ul class='links'>
             <li>
@@ -111,7 +113,7 @@
 <script>
 
 		$(window).scroll(function() {
-			$('#phone').each(function(){
+			$('.case').each(function(){
 			var imagePos = $(this).offset().top;
 
 			var topOfWindow = $(window).scrollTop();
@@ -119,44 +121,6 @@
 					$(this).addClass("slideUp");
 				}
 			});
-
-			$('#pin').each(function(){
-			var imagePos = $(this).offset().top;
-
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
-					$(this).addClass("hatch");
-				}
-			});
-
-			$('#pop-up-message').each(function(){
-			var imagePos = $(this).offset().top;
-
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
-					$(this).addClass("slideExpandUp");
-				}
-			});
-
-			$('#example-4').each(function(){
-			var imagePos = $(this).offset().top;
-
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
-					$('.device-arrow').addClass("stretchRight");
-				}
-			});
-
-			$('#example-5').each(function(){
-			var imagePos = $(this).offset().top;
-
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
-					$('.graph-bar').addClass("pullUp");
-				}
-			});
-
-
 		});
 
 </script>
