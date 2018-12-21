@@ -19,15 +19,18 @@
     <link href='assets/images/favicon.ico' rel='shortcut icon'>
     <link href='assets/images/favicon.ico' rel='apple-touch-icon'>
     <link href="assets/stylesheets/application.css" rel="stylesheet" />
+    <link href="assets/stylesheets/animations.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
     <title>Marcus Chiu - Developer</title>
 </head>
 <body class='index'>
 <section class='container' role='main'>
-    <header class='title' role='banner'>
+    <header class='title slideUp' role='banner'>
         <h1>
             Marcus Chiu
             <span>
-            &mdash; Developer
+            &mdash; Fulltime Asian
           </span>
         </h1>
         <p>I am fullstack developer</p>
@@ -45,16 +48,16 @@
             </figure>
             <a href='http:doc.marcuschiu.com' target='_blank'>
                 <strong>doc.marcuschiu.com</strong>
-                <i>Documentation System</i>
+                <i>a documentation system built for a web browser</i>
             </a>
         </div>
         <div class='case'>
             <figure>
-                <img src='assets/images/kibocommerce.png'>
+                <img src='assets/images/face-identification.jpg'>
             </figure>
-            <a href='https://kibocommerce.com/' target='_blank'>
-                <strong>Software Developer & DevOps</strong>
-                <i>maintained cloud commerce solutions</i>
+            <a href='https://github.com/TheRealMarcusChiu/machine-learning-face-recognition-identification' target='_blank'>
+                <strong>Facial Identification</strong>
+                <i>using OpenCV</i>
             </a>
         </div>
         <div class='case'>
@@ -110,5 +113,57 @@
         </p>
     </footer>
 </section>
+<script>
+
+		$(window).scroll(function() {
+			$('#phone').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+
+			$('#pin').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("hatch");
+				}
+			});
+
+			$('#pop-up-message').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideExpandUp");
+				}
+			});
+
+			$('#example-4').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$('.device-arrow').addClass("stretchRight");
+				}
+			});
+
+			$('#example-5').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$('.graph-bar').addClass("pullUp");
+				}
+			});
+
+
+		});
+
+</script>
 </body>
 </html>
