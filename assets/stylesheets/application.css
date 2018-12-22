@@ -124,24 +124,12 @@ header[role="banner"] {
       margin-top: 0; }
   .about .links {
     margin-top: 40px; }
-    .about .links li {
-      margin-top: 4px; }
-      .about .links li a {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
-        .about .links li a:hover {
-          color: #4af7ff !important;
-          border-color: transparent !important;
-          opacity: 1 !important; }
-        .about .links li a.link {
-          border-color: transparent; }
-          .about .links li a.link:hover {
-            color: #08b7ff !important; }
-      .about .links li:nth-child(1) a {
-        opacity: 0.9; }
-      .about .links li:nth-child(2) a {
-        opacity: 0.75; }
-      .about .links li:nth-child(3) a {
-        opacity: 0.6; }
+    .about .links img {
+      max-width: 40px;
+    }
+    .about .links img:hover {
+      opacity: 0.6;
+    }
 
 footer[role="contentinfo"] {
   padding: 80px 0; }
