@@ -34,6 +34,11 @@ strong {
 p, ul {
   font-size: 22px; }
 
+#description {
+  font-size: 15px;
+  text-align: justify;
+}
+
 body {
   font-size: 100%;
   vertical-align: baseline;
