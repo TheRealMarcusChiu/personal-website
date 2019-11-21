@@ -45,12 +45,12 @@
           </span>
         </h1>
         <p>
-            I'm currently
-            <del>studying BS in CS at UTD</del>,
-            <del>Computer Vision RA at VirtualBloks</del>,
+            currently
+            <del>Student studying BS in CS at UTD</del>,
+            <del>Computer Vision Researcher at VirtualBloks</del>,
             <del>Android Developer at Ghoomo</del>,
-            <del>a Software Developer then a DevOps guy at Kibo Commerce</del>,
-            studying Master's in CS at UTD
+            <del>FullStack Developer at Kibo Commerce</del>,
+            Student studying Master's in CS at UTD
         </p>
 <!--        <p id="description">-->
 <!--            Marcus is a full-time student studying Computer Science at UTD. But you'll most likely find him at McDonald's. Cause his tastes are impeccable. Aside from, a-side-of-fries, he loves to learn computer stuff. And I say stuff, because who knows what he'll be learning right now. He's always learning new stuff, in fact on his free-time he reads books just to learn more new stuff. And he continues to do so even after his free-time is up... Fortunately this does not affect him from getting good grades at school (4.0 GPA to be exact). Nor does it affect him from getting his work done at his previous employments. The only downside is that he doesn't play video games. None, zero zilch nada. Nor does he play/follow any sports! He finds them boring (i know, a bit harsh). In other words, Marcus is an uncultured boy.-->
@@ -73,7 +73,20 @@
     <section class='cases'>
         <div class='case'>
             <figure>
-                <img src='assets/images/face-identification.jpg'>
+                <a href='http://confluence.marcuschiu.com/display/NOT/Computer' target='_blank'>
+                    <img src='assets/images/confluence.png'>
+                </a>
+            </figure>
+            <a href='http://confluence.marcuschiu.com/display/NOT/Computer' target='_blank'>
+                <strong class="pulse">Personal Confluence Site</strong>
+                <i>almost everything I learned is documented in this site</i>
+            </a>
+        </div>
+        <div class='case'>
+            <figure>
+                <a href='https://github.com/TheRealMarcusChiu/machine-learning-face-recognition-identification' target='_blank'>
+                    <img src='assets/images/face-identification.jpg'>
+                </a>
             </figure>
             <a href='https://github.com/TheRealMarcusChiu/machine-learning-face-recognition-identification' target='_blank'>
                 <strong class="pulse">Facial Identification</strong>
@@ -82,7 +95,9 @@
         </div>
         <div class='case'>
             <figure>
-                <img src='assets/images/doc-marcuschiu-com.png'>
+                <a href='http://doc.marcuschiu.com' target='_blank'>
+                    <img src='assets/images/doc-marcuschiu-com.png'>
+                </a>
             </figure>
             <a href='http://doc.marcuschiu.com' target='_blank'>
                 <strong class="pulse">http://doc.marcuschiu.com</strong>
@@ -91,16 +106,21 @@
         </div>
         <div class='case'>
             <figure>
-                <img src='assets/images/android-developer.png'>
+                <a href='https://github.com/groupon-copy' target='_blank'>
+                    <img src='assets/images/android-developer.png'>
+                </a>
             </figure>
             <a href='https://github.com/groupon-copy' target='_blank'>
                 <strong class="pulse">Android Application</strong>
-                <i>an android application mimicking the design of Groupon while utilizing Yelp APIs</i>
+                <i>recreating Groupon App with added Yelp APIs</i>
             </a>
         </div>
     </section>
     <p>
-        other websites:</br>
+        other <a class='link' href='http://confluence.marcuschiu.com/display/NOT/Personal+Projects' target="_blank">personal projects</a>
+    </p></br></br>
+    <p>
+        current websites:</br>
         - <a class='link' href='http://confluence.marcuschiu.com' target="_blank">confluence.marcuschiu.com</a></br>
         - <a class='link' href='http://doc.marcuschiu.com' target="_blank">doc.marcuschiu.com</a></br>
         - <a class='link' href='http://wiki.marcuschiu.com' target="_blank">wiki.marcuschiu.com</a></br>
@@ -139,24 +159,20 @@
         </ul>
     </div>
     <footer role='contentinfo'>
-        <p>
-            &copy; Marcus Chiu &mdash; 2018
-        </p>
+        <p>&copy; Marcus Chiu &mdash; 2018</p>
     </footer>
 </section>
 <script>
+    $(window).scroll(function() {
+        $('.case').each(function(){
+        var imagePos = $(this).offset().top;
 
-		$(window).scroll(function() {
-			$('.case').each(function(){
-			var imagePos = $(this).offset().top;
-
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
-					$(this).addClass("slideUp");
-				}
-			});
-		});
-
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideUp");
+            }
+        });
+    });
 </script>
 </body>
 </html>
