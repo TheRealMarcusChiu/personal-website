@@ -132,6 +132,9 @@ header[role="banner"] {
                                        animation-iteration-count: infinite;
                                        animation-direction: alternate;
                                  }
+      .cases .case figure video {
+        display: block;
+        width: 100%; }
       .cases .case figure a {
         margin: 40px 0 0 0; }
     .cases .case a {

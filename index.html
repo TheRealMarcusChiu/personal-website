@@ -144,7 +144,10 @@
         <div class='case'>
             <figure>
                 <a href='https://github.com/groupon-copy' target='_blank'>
-                    <img src='assets/images/android-developer.gif'>
+                    <video id="android-developer" muted autoplay loop>
+                        <source src="assets/images/android-developer.mp4" type="video/mp4">
+                        your browser does not support the video tag.
+                    </video>
                 </a>
             </figure>
             <a href='https://github.com/groupon-copy' target='_blank'>
@@ -192,6 +195,10 @@
                 $(this).addClass("slideUp");
             }
         });
+    });
+
+    $(document).ready(function() {
+        document.querySelector('android-developer').play();
     });
 </script>
 </body>
